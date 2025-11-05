@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Document Information
+##  Document Information
 
 | Item | Details |
 |------|---------|
@@ -22,7 +22,7 @@
 
 ---
 
-## 🎯 Test Objectives
+##  Test Objectives
 
 The primary objectives of this test plan are to:
 
@@ -36,7 +36,7 @@ The primary objectives of this test plan are to:
 
 ---
 
-## 📊 Scope Definition
+##  Scope Definition
 
 ### **In Scope**
 
@@ -84,7 +84,7 @@ The primary objectives of this test plan are to:
 
 ---
 
-## 🎲 Risk Analysis
+##  Risk Analysis
 
 ### **Identified Risks**
 
@@ -103,7 +103,7 @@ The primary objectives of this test plan are to:
 
 ---
 
-## 🛠️ Testing Environment & Tools
+##  Testing Environment & Tools
 
 ### **Hardware Requirements**
 
@@ -131,7 +131,7 @@ The primary objectives of this test plan are to:
 
 ---
 
-## 📅 Test Schedule
+##  Test Schedule
 
 | Phase | Activity | Duration | Dates | Owner | Status |
 |-------|----------|----------|-------|-------|--------|
@@ -146,7 +146,7 @@ The primary objectives of this test plan are to:
 
 ---
 
-## ✅ Entry Criteria
+##  Entry Criteria
 
 Before testing can begin, the following must be completed:
 
@@ -180,7 +180,7 @@ Testing will be considered complete when:
 
 ---
 
-## 📝 Test Case Categories
+##  Test Case Categories
 
 ### **Functional Test Cases** (Priority: HIGH)
 - User Registration & Authentication
@@ -221,7 +221,7 @@ Testing will be considered complete when:
 
 ---
 
-## 📊 Deliverables
+##  Deliverables
 
 ### **Weekly Submissions**
 
@@ -259,7 +259,7 @@ Testing will be considered complete when:
 
 ---
 
-## 👥 Team Responsibilities
+##  Team Responsibilities
 
 ### **Steven Oyaro - Test Manager**
 - Develop and maintain test plan
@@ -287,7 +287,7 @@ Testing will be considered complete when:
 
 ---
 
-## 📈 Quality Metrics
+##  Quality Metrics
 
 ### **Target Metrics**
 
@@ -319,7 +319,7 @@ Testing will be considered complete when:
 
 ---
 
-## 🔄 Testing Methodology
+##  Testing Methodology
 
 ### **Approach**
 
@@ -347,7 +347,7 @@ We will follow the Software Testing Life Cycle (STLC) with emphasis on:
 
 ---
 
-## 🐛 Defect Management
+##  Defect Management
 
 ### **Bug Report Requirements**
 
@@ -374,7 +374,7 @@ New → In Progress → Under Review → Resolved/Closed
 
 ---
 
-## 📞 Communication Plan
+## Communication Plan
 
 ### **Team Communication**
 - **Daily:** Quick team sync-ups via messaging
@@ -394,7 +394,7 @@ New → In Progress → Under Review → Resolved/Closed
 
 ---
 
-## 🎓 Success Criteria
+##  Success Criteria
 
 ### **Project Success Indicators**
 - ✅ All planned test cases executed
@@ -408,7 +408,7 @@ New → In Progress → Under Review → Resolved/Closed
 
 ---
 
-## 📋 Approval & Sign-Off
+## Approval & Sign-Off
 
 | Name | Role | Signature | Date |
 |------|------|-----------|------|
@@ -418,7 +418,7 @@ New → In Progress → Under Review → Resolved/Closed
 
 ---
 
-## 📎 Appendices
+##  Appendices
 
 ### **Appendix A: Test Data**
 - User accounts for testing
