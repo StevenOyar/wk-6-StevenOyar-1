@@ -1,11 +1,12 @@
 
-## 📋 Document Information
-*Team name*: 
-**Project:* CleanCity - Waste Pickup Scheduler  
+##  Document Information
+*Team name*: Bug Hunters 
+
+*Project*: CleanCity - Waste Pickup Scheduler  
 
 *Version:*
-*Date:* 
-*Status:* 
+*Date:* 10/11/2025
+*Status:* In Progress
 
 ---
 
