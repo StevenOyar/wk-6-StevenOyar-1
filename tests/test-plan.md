@@ -23,7 +23,7 @@ This test plan outlines a comprehensive quality assurance testing approach for t
 **Key Objectives:**
 - Identify and document minimum 15 defects
 - Achieve 100% feature coverage
-- Validate cross-browser compatibility (Chrome, Firefox, Safari, Edge, Brave)
+- Validate cross-browser compatibility (Chrome, Firefox, Safari, Edge)
 - Ensure WCAG 2.1 AA accessibility compliance
 - Deliver comprehensive test report and video presentation per the predefined conditions.
 
@@ -50,7 +50,7 @@ This test plan outlines a comprehensive quality assurance testing approach for t
 |------------------|---------------|----------------------|
 | **OBJ-001** | Identify and document minimum 15 bugs | ≥15 bugs logged in GitHub Kanban with full details |
 | **OBJ-002** | Validate all functional requirements | 100% of features tested against FRS |
-| **OBJ-003** | Ensure cross-browser compatibility | Application works in Chrome, Firefox, Safari, Edge, Brave|
+| **OBJ-003** | Ensure cross-browser compatibility | Application works in Chrome, Firefox, Safari, Edge|
 | **OBJ-004** | Verify accessibility compliance | WCAG 2.1 AA standards met |
 | **OBJ-005** | Assess security vulnerabilities | Input validation, XSS, session security tested |
 | **OBJ-006** | Evaluate performance | Page load times < 3 seconds |
@@ -189,7 +189,6 @@ Each bug report MUST include:
 | Chrome | Latest (v119+) | Installed |
 | Firefox | Latest (v120+) | Installed |
 | Safari | Latest (v17+) | Installed |
-| Brave | Latest | Installed |
 | Edge | Latest (v119+) | Installed |
 
 ### Testing Tools for Risk Analysis
@@ -359,7 +358,7 @@ Each bug report MUST include:
 |-----------|----------------|--------------|--------------|------------|
 | **Phase 1: Planning & Setup** | Nov 1, 2025 | Nov 5, 2025 | 1 day |  **Done** |
 | **Phase 2: Test Design & Execution** | Nov 6, 2025 | Nov 11, 2025 | 6 days |  In Progress |
-| **Phase 3: Reporting & Closure** | Nov 11, 2025 | Nov 18, 2025 | 7 days |  Planned |
+| **Phase 3: Reporting & Closure** | Nov 11, 2025 | Nov 18, 2025 | 7 days | In Progress   |
 
 
 
@@ -379,10 +378,10 @@ Each bug report MUST include:
 ### Instructor Acknowledgment
 | **Field** | **Details** |
 |-----------|------------|
-| **Instructor Name** |  |
-| **Percentage % earned** | |
-| **Review Date** | |
-| **Comments** | |
+| **Instructor Name** | Gerald |
+| **Percentage % earned** | 5%|
+| **Review Date** |11/11/2025 |
+| **Comments** | good work we work on the report and finish execution |
 
 ---
 | **Name** | **Role** | **Initial** | **Date** | **Status** |
