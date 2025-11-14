@@ -4,12 +4,12 @@
 | **Field** | **Details** |
 |-----------|------------|
 | **Document Phase** | Phase 2|
-| **Document Date** | November 10, 2025 |
+| **Document Date** | November 14, 2025 |
 | **Project Name** | CleanCity QA Testing Project |
 | **Team Name** | Bug Hunters |
-| **Prepared By** | All Team members |
+| **Prepared By** | All Team membes |
 | **Team Members** | Lilian Kavengi, Steven Oyaro, Rose Kemunto |
-| **Status** | Phase 2 - In Progress |
+| **Status** | Phase 2 - Done |
 
 ---
 
@@ -20,9 +20,9 @@
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-001 | FR-001 | Valid user registration with all required fields | Browser opened, on registration page | Name: "John Doe", Email: "user1@test.com", Password: "TestPass123", Confirm: "TestPass123" | 1. Navigate to registration page<br>2. Enter valid name<br>3. Enter valid email<br>4. Enter valid password<br>5. Confirm password<br>6. Click Register | User account created successfully, redirected to login page with success message | Form only displays: Name, Email, and Password fields. Missing Confirm Password and Phone fields , no success message| Fail |[Bug-001](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/47) |
+| TC-001 | FR-001 | Valid user registration with all required fields | Browser opened, on registration page | Name: "John Doe", Email: "user1@test.com", Password: "TestPass123", Confirm: "TestPass123" | 1. Navigate to registration page<br>2. Enter valid name<br>3. Enter valid email<br>4. Enter valid password<br>5. Confirm password<br>6. Click Register | User account created successfully, redirected to login page with success message | Form only displays: Name, Email, and Password fields. Missing Confirm Password and Phone fields , no success message| Fail |[Bug-010](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/47) |
 | TC-002 | FR-002 | Registration with invalid email format | Browser opened, on registration page | Name: "John Doe", Email: "invalidemail", Password: "TestPass123" | 1. Navigate to registration page<br>2. Enter name<br>3. Enter invalid email<br>4. Enter password<br>5. Click Register | Error message displayed: "Please enter a valid email address" | error message please enter a valid email pop up | Pass | N/A |
-| TC-003 | FR-001 | Registration with password less than 8 characters | Browser opened, on registration page | Name: "John Doe", Email: "user1@test.com", Password: "2" | 1. Navigate to registration page<br>2. Enter name<br>3. Enter email<br>4. Enter short password<br>5. Click Register | Error message displayed: "Password must be at least 8 characters long" | Password accepted, user id redirected to login| Fail | [Bug-001a](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/36) |
+| TC-003 | FR-001 | Registration with password less than 8 characters | Browser opened, on registration page | Name: "John Doe", Email: "user1@test.com", Password: "2" | 1. Navigate to registration page<br>2. Enter name<br>3. Enter email<br>4. Enter short password<br>5. Click Register | Error message displayed: "Password must be at least 8 characters long" | Password accepted, user id redirected to login| Fail | [Bug-001](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/36) |
 | TC-004 | FR-001 | Registration with mismatched passwords | Browser opened, on registration page | Name: "John Doe", Email: "user1@test.com", Password: "TestPass123", Confirm: "Pass654321" | 1. Navigate to registration page<br>2. Enter valid data<br>3. Enter different password in confirm field<br>4. Click Register | Error message displayed: "Passwords do not match" | cannot do this the confirm password is not available | Blocked | [Bug-001](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/47) |
 | TC-005 | FR-001 | Registration with name less than 2 characters | Browser opened, on registration page | Name: "J", Email: "user1@test.com", Password: "TestPass123" | 1. Navigate to registration page<br>2. Enter single character name<br>3. Enter valid email and password<br>4. Click Register | Error message displayed: "Name must be at least 2 characters" |name is accepted , no error message | Fail | Bug-011 |
 | TC-006 | FR-002 | Registration with duplicate email | Browser opened, existing user in system | Email: "user@cleancity.com" (existing), Password: "TestPass123" | 1. Navigate to registration page<br>2. Enter existing email<br>3. Enter password<br>4. Click Register | Error message displayed: "User with this email already exists" | Email can be registered twice | Fail |[Bug-003](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/38) |
@@ -200,41 +200,42 @@
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
 | TC-085 | FR-065 | Notification bell display | User logged in | N/A | 1. Login to application<br>2. View notification bell | Notification bell visible with unread count |notification bell is visible and has no unread count | PAss |N/A |
-| TC-086 | FR-066 | Pickup confirmation notification | User logged in | New pickup request | 1. Schedule pickup<br>2. Admin confirms<br>3. Check notifications | Notification received for pickup confirmation |admin page is not working and the  notification are not showing up. | Blocked/Fail |[Bug](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
-| TC-087 | FR-066 | New blog post notification | User logged in | Admin publishes blog | 1. Admin creates blog post<br>2. User checks notifications | Notification received for new blog post | Missing feature the user cannot create a blog post|  Blocked/Fail |[Bug](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
-| TC-088 | FR-066 | Community interaction notification | User logged in | Another user likes post | 1. Create community post<br>2. Another user interacts<br>3. Check notifications | Notification received for interaction |No update of the notification after interaction with community | Blocked/Fail |[Bug](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
-| TC-089 | FR-066 | Achievement unlock notification | User logged in | Achievement criteria met | 1. Complete achievement requirement<br>2. Check notifications | Notification received for badge unlock |Feature is missing to test| Blocked/Fail |[Bug](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
-| TC-090 | FR-067 | Mark notification as read | User logged in, unread notifications | Notification ID | 1. View notifications<br>2. Click on notification<br>3. Mark as read | Notification marked as read, count decreases |no update of the notifcation to see the read and unread notification| Blocked/Fail |[Bug](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
-| TC-091 | FR-068 | Notification history view | User logged in | Multiple notifications | 1. Click notification bell<br>2. View history | All notifications displayed in chronological order |missing functionality feature|  Blocked/Fail |[Bug](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
+| TC-086 | FR-066 | Pickup confirmation notification | User logged in | New pickup request | 1. Schedule pickup<br>2. Admin confirms<br>3. Check notifications | Notification received for pickup confirmation |admin page is not working and the  notification are not showing up. | Blocked/Fail |[Bug-031](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
+| TC-087 | FR-066 | New blog post notification | User logged in | Admin publishes blog | 1. Admin creates blog post<br>2. User checks notifications | Notification received for new blog post | Missing feature the user cannot create a blog post|  Blocked/Fail |[Bug-031](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
+| TC-088 | FR-066 | Community interaction notification | User logged in | Another user likes post | 1. Create community post<br>2. Another user interacts<br>3. Check notifications | Notification received for interaction |No update of the notification after interaction with community | Blocked/Fail |[Bug-031](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
+| TC-089 | FR-066 | Achievement unlock notification | User logged in | Achievement criteria met | 1. Complete achievement requirement<br>2. Check notifications | Notification received for badge unlock |Feature is missing to test| Blocked/Fail |[Bug-031](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
+| TC-090 | FR-067 | Mark notification as read | User logged in, unread notifications | Notification ID | 1. View notifications<br>2. Click on notification<br>3. Mark as read | Notification marked as read, count decreases |no update of the notifcation to see the read and unread notification| Blocked/Fail |[Bug-031](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
+| TC-091 | FR-068 | Notification history view | User logged in | Multiple notifications | 1. Click notification bell<br>2. View history | All notifications displayed in chronological order |missing functionality feature|  Blocked/Fail |[Bug-031](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/69) |
 
 ---
 ## User Interface Requirements
 
 ### Responsive Design Test Cases
+### Responsive Design Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-092 | FR-069 | Desktop responsiveness (1920x1080+) | Browser opened | N/A | 1. Set browser to 1920x1080 resolution<br>2. Navigate through all pages<br>3. Test all features | All features work correctly, layout displays properly without scrolling | | Pending | |
-| TC-093 | FR-069 | Tablet responsiveness (768px-1024px) | Browser opened or tablet device | N/A | 1. Set browser to 768px width<br>2. Navigate through all pages<br>3. Test all interactive elements | Layout adapts correctly, all features remain functional | | Pending | |
-| TC-094 | FR-069 | Mobile responsiveness (320px-767px) | Browser opened or mobile device | N/A | 1. Set browser to 375px width<br>2. Navigate through all pages<br>3. Test form inputs and buttons | Mobile-optimized layout, touch-friendly interface works correctly | | Pending | |
-| TC-095 | FR-070 | Functionality maintained across screen sizes | Browser or multiple devices | Sample pickup request data | 1. Test pickup scheduling on desktop<br>2. Test same on tablet<br>3. Test same on mobile<br>4. Verify data consistency | All features work on all screen sizes, data persists correctly | | Pending | |
+| TC-092 | FR-069 | Desktop responsiveness (1920x1080+) | Browser opened | N/A | 1. Set browser resolution to 1920x1080<br>2. Navigate through all pages<br>3. Test forms and interactions | All features display correctly, no layout issues | Layout issues on all browsers | Fail | [Bug-036](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/80) |
+| TC-093 | FR-069 | Tablet responsiveness (768px-1024px) | Browser opened | N/A | 1. Resize browser to 768px width<br>2. Navigate through all pages<br>3. Test forms and interactions | Layout adapts properly, all features accessible | Layout is not adpative to tablet, the element headers overlap on tablet mode| Fail |[Bug-037](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/81) |
+| TC-094 | FR-069 | Mobile responsiveness (320px-767px) | Browser opened | N/A | 1. Resize browser to 375px width<br>2. Navigate through all pages<br>3. Test forms and mobile menu | Mobile layout displays correctly, hamburger menu works | No hambuger menu, the headers cover more than half of the screen , tha layout is not displaying correct  | Fail |[Bug-038](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/82) |
+| TC-095 | FR-070 | Functionality across all screen sizes | Browser opened | Test data from TC-013 | 1. Test pickup scheduling at 1920px<br>2. Test same at 768px<br>3. Test same at 375px | All functionality works identically across sizes | the scheduling is working well on destop part but the tablet the user will face difficulty of navigation the headers are covering the whole screen| Fail |[Bug-038](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/82),[Bug-037](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/81) |
 
 ### Accessibility Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-096 | FR-071 | WCAG 2.1 AA compliance check | Browser with axe DevTools installed | N/A | 1. Open application<br>2. Run axe accessibility scan on all pages<br>3. Review violations | No critical WCAG 2.1 AA violations found | | Pending | |
-| TC-097 | FR-072 | Keyboard navigation support | Browser opened | N/A | 1. Use Tab key to navigate through page<br>2. Use Enter/Space to activate buttons<br>3. Test all interactive elements | All elements accessible and operable via keyboard only | | Pending | |
-| TC-098 | FR-073 | Alt text for images | Browser opened | N/A | 1. Navigate to Awareness page<br>2. Inspect all images<br>3. Verify alt attributes present | All images have descriptive alt text | | Pending | |
-| TC-099 | FR-074 | Screen reader compatibility | Screen reader enabled (NVDA/VoiceOver) | N/A | 1. Enable screen reader<br>2. Navigate through application<br>3. Test form completion<br>4. Test button activation | All content properly announced, navigation clear, forms usable | | Pending | |
+| TC-096 | FR-071 | WCAG 2.1 AA compliance check | Browser with axe DevTools | N/A | 1. Install axe DevTools extension<br>2. Run scan on all pages<br>3. Review violations | No critical WCAG 2.1 AA violations found |one critical and 34 WCAG 2.1 AA violations found | FAil |[Bug-039](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/83) |
+| TC-097 | FR-072 | Keyboard navigation - Tab key | Browser opened | N/A | 1. Start on home page<br>2. Use Tab key to navigate<br>3. Test all interactive elements | All elements accessible via Tab, logical order | All top element are acessible via tab key | Pass | N/A |
+| TC-098 | FR-073 | Alt text for images | Browser opened | N/A | 1. Navigate to Awareness page<br>2. Inspect all images<br>3. Check alt attributes | All images have descriptive alt text | only avatar is the picture has an alt avatar | pass partially/blocked | n/a |
+| TC-99 | FR-074 | Screen reader compatibility | NVDA or JAWS installed | N/A | 1. Enable screen reader<br>2. Navigate through application<br>3. Test form filling | All content properly announced, forms usable | drop down for choosing the blog tages are not announced | Fail  |[Bug-040](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/84) |
 
 ### Navigation Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-100 | FR-075 | Navigation menu clarity and functionality | Browser opened | N/A | 1. View navigation menu<br>2. Click each menu item<br>3. Verify navigation works | Menu items clearly labeled, all links functional, current page highlighted | | Pending | |
-| TC-101 | FR-076 | Breadcrumbs on complex pages | Browser opened | N/A | 1. Navigate to nested pages (e.g., Admin panel)<br>2. View breadcrumb trail<br>3. Click breadcrumb links | Breadcrumbs show correct hierarchy, links navigate correctly | | Pending | |
-| TC-102 | FR-077 | Search functionality | Browser opened, multiple requests exist | Search term: "John" | 1. Locate search functionality<br>2. Enter search term<br>3. Execute search<br>4. View results | Relevant results displayed, search works across applicable sections | | Pending | |
+| TC-100 | FR-075 | Clear navigation menu | Browser opened | N/A | 1. View navigation bar<br>2. Check all menu items<br>3. Test each link | Menu clearly labeled, all links functional | Navigation menu is missing, cannot access any menu items.| Fail/Blocked |[Bug-041](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/85) |
+| TC-101 | FR-076 | Breadcrumbs on complex pages | User logged in | N/A | 1. Navigate to Admin panel<br>2. Go to nested section<br>3. Check breadcrumb trail | Breadcrumbs show path: Home > Admin > Section |Breadcrumbs are not present on the page | Fail/Blocked |[Bug-041](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/85) |
+| TC-102 | FR-077 | Search functionality | Browser opened, content exists | Search term: "recycling" | 1. Locate search box<br>2. Enter "recycling" in the blog page search section <br>3. Submit search | Relevant results are filtered | some blogs are filterd in the blog page| Pass | N/a|
 
 ---
 
@@ -244,87 +245,78 @@
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-103 | FR-078 | localStorage data storage | Browser opened | User registration data, pickup requests | 1. Register new user<br>2. Create pickup requests<br>3. Open browser DevTools<br>4. Check localStorage | All data stored correctly in localStorage with proper keys | | Pending | |
-| TC-104 | FR-079 | Data integrity across sessions | Browser opened, data exists | Existing user with requests | 1. Login and view data<br>2. Close browser completely<br>3. Reopen browser<br>4. Login again<br>5. Verify data | All data persists correctly, no data loss or corruption | | Pending | |
-| TC-105 | FR-080 | localStorage limit handling | Browser opened | Large amount of test data | 1. Fill localStorage near 5MB limit<br>2. Attempt to add more data<br>3. Observe error handling | Graceful error message displayed, application remains functional | | Pending | |
+| TC-103 | FR-078 | localStorage stores user data | Browser opened | Registration data from TC-001 | 1. Register new account<br>2. Open browser DevTools<br>3. Check Application > localStorage | User data stored with correct keys and format | all user data is stored corectly | Pass | N/a |
+| TC-104 | FR-078 | localStorage stores pickup requests | User logged in | Pickup data from TC-013 | 1. Schedule pickup request<br>2. Check localStorage<br>3. Verify data structure | Pickup request stored in localStorage correctly |stored correctly but no new pickup request is updated to the local storage | Partially pass/fail | n/a |
+| TC-105 | FR-079 | Data persists across sessions | User logged in | Valid credentials | 1. Login and create data<br>2. Close browser completely<br>3. Reopen and check data | All data persists correctly after browser restart | Login does persit and data does persit| Pass | |
+| TC-106 | FR-080 | localStorage limit handling | Browser opened | Large amount of test data | 1. Fill localStorage near 5MB limit<br>2. Attempt to add more data<br>3. Observe error handling | Graceful error message displayed to user | error"Failed to execute 'setItem' on 'Storage': Setting the value.."   | Pass | 
 
 ### Data Validation Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-106 | FR-081 | Input validation before processing | Browser opened | Invalid data: empty fields, special characters | 1. Enter invalid data in forms<br>2. Attempt to submit<br>3. Observe validation | Validation prevents submission, clear error messages shown | | Pending | |
-| TC-107 | FR-082 | XSS attack prevention | Browser opened | XSS payload: `<script>alert('XSS')</script>` | 1. Enter XSS payload in text fields<br>2. Submit form<br>3. View rendered content<br>4. Check for script execution | Script tags sanitized or escaped, no alert displayed | | Pending | |
-| TC-108 | FR-082 | SQL injection prevention | Browser opened | SQL injection: `' OR '1'='1` | 1. Enter SQL injection payload in login<br>2. Submit form<br>3. Observe behavior | Payload treated as text, no unauthorized access | | Pending | |
-| TC-109 | FR-083 | User content sanitization | User logged in | HTML content: `<strong>Bold</strong><script>alert(1)</script>` | 1. Create community post with HTML<br>2. Submit content<br>3. View rendered post | Safe HTML allowed, scripts removed, content displayed safely | | Pending | |
+| TC-107 | FR-082 | XSS attack prevention | Browser opened | `<script>alert('XSS')</script>` | 1. Enter XSS payload in name field<br>2. Submit form<br>3. Check rendered output | Script tags escaped, no alert executed | No alert but scripts do not escape | Fail |[Bug-042](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/86) |
+| TC-110 | FR-082 | SQL injection prevention | Browser opened | `' OR '1'='1` | 1. Enter SQL injection in login<br>2. Submit form<br>3. Verify behavior | Payload treated as text, no unauthorized access |authorized access with the sql injection | Fail |[Bug-043](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/87) |
+| TC-111 | FR-083 | User content sanitization | User logged in | HTML: `<strong>Bold</strong>` | 1. Post community content with HTML<br>2. Submit post<br>3. View rendered content | HTML escaped or sanitized safely |Html does not escape and get sanitized | Fail |[Bug-044](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/88) |
 
 ---
 
 ## Performance Requirements
 
-### Performance Test Cases
+### Response Time Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-110 | FR-084 | Page load time under 3 seconds | Standard internet connection, clear cache | N/A | 1. Clear browser cache<br>2. Load application<br>3. Measure load time using DevTools<br>4. Test multiple pages | All pages load within 3 seconds | | Pending | |
-| TC-111 | FR-085 | User interaction response time | Browser opened, application loaded | Form data | 1. Click buttons and measure response<br>2. Submit forms and measure response<br>3. Navigate pages and measure response | All interactions respond within 1 second | | Pending | |
+| TC-112 | FR-084 | Page load time - Home page | Browser opened, cache cleared | N/A | 1. Clear browser cache<br>2. Navigate to home page<br>3. Use DevTools Performance tab | Page loads within 3 seconds |page loads withing 3 seconds | Pass | |
+| TC-113 | FR-084 | Page load time - Dashboard | User logged in, cache cleared | N/A | 1. Clear browser cache<br>2. Navigate to dashboard<br>3. Measure load time | Dashboard loads within 3 seconds | Dashboard loads in 3 seconds | Pass | |
+| TC-114 | FR-085 | Button click response time | User logged in | N/A | 1. Click "Schedule Pickup" button<br>2. Measure response time<br>3. Repeat for other buttons | All interactions respond within 1 second | responds in 1 second | Pass | |
+| TC-115 | FR-085 | Form submission response time | User logged in | Valid pickup data | 1. Fill pickup form completely<br>2. Submit form<br>3. Measure response time | Form processes and confirms within 1 second  with success message | form clear almost immediately | Pass | |
 
 ### Browser Compatibility Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-112 | FR-086 | Chrome compatibility (latest 2 versions) | Chrome browser | Sample user workflow | 1. Open application in Chrome<br>2. Test registration, login, pickup scheduling<br>3. Test admin functions<br>4. Test all major features | All features work without issues | | Pending | |
-| TC-113 | FR-086 | Firefox compatibility (latest 2 versions) | Firefox browser | Sample user workflow | 1. Open application in Firefox<br>2. Test registration, login, pickup scheduling<br>3. Test admin functions<br>4. Test all major features | All features work without issues | | Pending | |
-| TC-114 | FR-086 | Safari compatibility (latest 2 versions) | Safari browser | Sample user workflow | 1. Open application in Safari<br>2. Test registration, login, pickup scheduling<br>3. Test admin functions<br>4. Test all major features | All features work without issues | | Pending | |
-| TC-115 | FR-086 | Edge compatibility (latest 2 versions) | Edge browser | Sample user workflow | 1. Open application in Edge<br>2. Test registration, login, pickup scheduling<br>3. Test admin functions<br>4. Test all major features | All features work without issues | | Pending | |
+| TC-116 | FR-086 | Chrome compatibility | Chrome latest version | Pickup data from TC-013 | 1. Open application in Chrome<br>2. Test registration and login<br>3. Test pickup scheduling | All features work correctly in Chrome | All features work correctly| Pass | |
+| TC-117 | FR-086 | Firefox compatibility | Firefox latest version | Pickup data from TC-013 | 1. Open application in Firefox<br>2. Test registration and login<br>3. Test pickup scheduling | All features work correctly in Firefox | All features work correctly| Pass | |
+| TC-118 | FR-086 | Safari compatibility | Safari latest version | Pickup data from TC-013 | 1. Open application in Safari<br>2. Test registration and login<br>3. Test pickup scheduling | All features work correctly in Safari | All features work correctly| Pass | |
+| TC-119 | FR-086 | Edge compatibility | Edge latest version | Pickup data from TC-013 | 1. Open application in Edge<br>2. Test registration and login<br>3. Test pickup scheduling | All features work correctly in Edge | All features work correctly| Pass | |
 
 ---
 
 ## Error Handling Requirements
 
-### Error Handling Test Cases
+### User-Friendly Errors Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-116 | FR-087 | Clear error messages displayed | Browser opened | Invalid form inputs | 1. Submit forms with various invalid data<br>2. View error messages<br>3. Verify clarity | Error messages are clear, actionable, and user-friendly | | Pending | |
-| TC-117 | FR-088 | Error resolution guidance provided | Browser opened | Common errors triggered | 1. Trigger various errors<br>2. Read error messages<br>3. Verify guidance presence | Each error provides guidance on how to resolve the issue | | Pending | |
-| TC-118 | FR-089 | Network error handling | Browser opened | N/A | 1. Load application<br>2. Disable network connection<br>3. Attempt actions requiring network<br>4. Observe error handling | Graceful error message displayed, no application crash | | Pending | |
+| TC-120 | FR-087 | Clear error messages | Browser opened | Invalid login email "admincleancity.com | 1. Enter wrong email <br>2. Submit login form<br>3. Read error message | Message is clear: "Invalid email" | error message display when I try to submit | Pass | |
+| TC-121 | FR-088 | Error resolution guidance | Browser opened | Empty required field | 1. Skip required field<br>2. Submit form<br>3. Read error guidance | Error explains what to be filled| error message pop up if I try to submitt the form | Pass | |
+| TC-122 | FR-089 | Network error handling | Browser opened | N/A | 1. Disable network connection<br>2. Try to submit form<br>3. Observe error handling | User-friendly message: "Network error. Check connection." | on deployed  web application  the errrors appear in the network devtools | Pass | |
 
 ### Form Validation Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-119 | FR-090 | Real-time form validation | Browser opened | Various inputs (valid and invalid) | 1. Enter data in registration form<br>2. Observe validation as typing<br>3. Test multiple fields | Validation feedback appears in real-time as user types | | Pending | |
-| TC-120 | FR-091 | Prevent invalid form submission | Browser opened | Incomplete/invalid form data | 1. Fill form with invalid data<br>2. Attempt to submit<br>3. Observe prevention | Form submission prevented, focus on first error field | | Pending | |
-| TC-121 | FR-092 | Validation error highlighting | Browser opened | Invalid form data | 1. Submit form with multiple errors<br>2. View error indicators<br>3. Check visual feedback | Errors clearly highlighted with red borders, icons, or messages | | Pending | |
+| TC-123 | FR-091 | Prevent invalid form submission | Browser opened | All fields empty | 1. Leave all fields blank<br>2. Click Submit button<br>3. Check behavior | Form not submitted, validation errors displayed | erro message fill in the blank spaces| pass | N/A |
+| TC-124 | FR-092 | Validation error highlighting | Browser opened | Invalid data in multiple fields | 1. Enter invalid email and short password<br>2. Submit form<br>3. Check visual indicators | Fields with errors highlighted in red with icons | No it only  highlight the firt part and others are not highlited | Partially Pass/Fail | |
 
+FR-090 has been perfomed 
 ---
 
-## Business Rules
+## Business Rules Validation
 
 ### Pickup Scheduling Rules Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-122 | BR-001 | 30-day advance booking limit enforced | User logged in | Pickup date 31 days ahead | 1. Navigate to pickup form<br>2. Select date 31 days in future<br>3. Submit request | Error: "Cannot schedule more than 30 days in advance" | | Pending | |
-| TC-123 | BR-001 | 24-hour minimum notice enforced | User logged in | Today's date | 1. Navigate to pickup form<br>2. Select today's date<br>3. Submit request | Error: "Minimum 24-hour notice required" | | Pending | |
-| TC-124 | BR-001 | Maximum 3 pickups per week enforced | User logged in, 3 pickups this week | 4th pickup same week | 1. Schedule 3 pickups in current week<br>2. Attempt to schedule 4th pickup this week | Error: "Maximum 3 pickups per week reached" | | Pending | |
-| TC-125 | BR-001 | Hazardous waste special approval required | User logged in | Waste type: "Hazardous" | 1. Schedule hazardous waste pickup<br>2. Submit request<br>3. Check status | Request created with "Pending Approval" status, marked for admin review | | Pending | |
+| TC-125 | BR-001 | 30-day advance booking limit | User logged in | Date: 31 days from today | 1. Select date 31 days ahead<br>2. Fill other fields<br>3. Submit request | Error: "Cannot schedule more than 30 days in advance" | the request can be submitted  | Fail |[Bg-032](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/75) |
+| TC-126 | BR-001 | 24-hour minimum notice | User logged in | Date: Today | 1. Select today's date<br>2. Fill other fields<br>3. Submit request | Error: "Minimum 24-hour notice required" | request can be submtitted same day | Fail |[Bug-033](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/76) |
+| TC-127 | BR-001 | Maximum 3 pickups per week | User logged in, 3 pickups this week | 4th pickup this week | 1. Schedule 3 pickups in current week<br>2. Attempt 4th pickup same week<br>3. Submit | Error: "Maximum 3 pickups per week reached" |more than 4 pickup ca be  created | Fail/blocked |[Bug-034](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/77) |
+| TC-128 | BR-001 | Hazardous waste approval requirement | User logged in | WasteType: "Hazardous" | 1. Schedule hazardous waste pickup<br>2. Submit request<br>3. Check status | Status shows "Pending Approval" instead of "Pending" | blocked lack of the admin panel to confirm | Fail/blocked |[Bug-035](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/78) |
 
-### User Management Rules Test Cases
-
-| Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
-|---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-126 | BR-002 | Email uniqueness enforced | Existing user in system | Duplicate email: "user@cleancity.com" | 1. Attempt registration with existing email<br>2. Submit form | Error: "Email address already in use" | | Pending | |
-| TC-127 | BR-002 | Password security requirements enforced | Browser opened | Weak password: "123" | 1. Register with password < 8 characters<br>2. Submit form | Error: "Password must be at least 8 characters" | | Pending | |
-| TC-128 | BR-002 | Admin account deletion prevention | Admin logged in | Admin user account | 1. Attempt to delete admin account<br>2. Confirm deletion | Error: "Admin accounts cannot be deleted" or action blocked | | Pending | |
 
 ### Content Rules Test Cases
 
-| Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
-|---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-129 | BR-003 | Inappropriate content prevention | User logged in | Offensive text with profanity | 1. Create community post with inappropriate content<br>2. Submit post | Content flagged automatically or submission blocked | | Pending | |
-| TC-130 | BR-003 | Blog comment moderation | User logged in | Comment text | 1. Add comment to blog post<br>2. Submit comment<br>3. Check visibility | Comment marked as "Pending Moderation", not immediately visible | | Pending | |
-| TC-131 | BR-003 | Content reporting functionality | User logged in | Inappropriate community post | 1. Find inappropriate post<br>2. Click Report/Flag<br>3. Select reason<br>4. Submit report | Content flagged for admin review, confirmation message shown | | Pending | |
+*BR-001 and Br-003 already applied on other test cases*
 
 ---
 
@@ -334,16 +326,16 @@
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-132 | FR-093 | Contextual help and tooltips | Browser opened | N/A | 1. Hover over help icons/question marks<br>2. View tooltip content<br>3. Test across multiple pages | Helpful tooltips displayed with relevant contextual information | | Pending | |
-| TC-133 | FR-094 | FAQ section accessibility | Browser opened | N/A | 1. Navigate to FAQ section<br>2. Browse questions and answers<br>3. Test search within FAQ | FAQ section accessible, well-organized, searchable | | Pending | |
-| TC-134 | FR-095 | Contact information availability | Browser opened | N/A | 1. Look for contact information<br>2. Verify details present<br>3. Check multiple pages | Contact information (email, phone, hotline) clearly displayed | | Pending | |
+| TC-129 | FR-093 | Contextual help tooltips | Browser opened | N/A | 1. Navigate to registration page<br>2. Hover over help icons (?) <br>3. Read tooltip content | Tooltips appear with helpful information |Feature not available | fail/blocked |[Bug-045](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/89) |
+| TC-130| FR-094 | FAQ section accessibility | Browser opened | N/A | 1. Navigate to Help/FAQ section<br>2. Browse questions<br>3. Test expandable answers | FAQ section accessible, questions organized by category |Feature not available | fail/blocked |[Bug-045](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/89) |
+| TC-131 | FR-095 | Contact information display | Browser opened | N/A | 1. Navigate to Awareness page<br>2. Scroll to contact section<br>3. Check information | Contact info clearly displayed: email, phone, website |Feature not available | fail/blocked |[Bug-045](https://github.com/StevenOyar/wk-6-StevenOyar-1/issues/89) |
 
 ### System Monitoring Test Cases
 
 | Test ID | FRS ID | Test Case Name | Prerequisites | Test Data | Steps to Reproduce | Expected Result | Actual Result | Status | Bug ID |
 |---------|--------|----------------|---------------|-----------|-------------------|-----------------|---------------|--------|---------|
-| TC-135 | FR-096 | User activity logging | User logged in | Various user actions | 1. Perform actions (login, schedule pickup, post)<br>2. Check browser console for logs<br>3. Verify logging occurs | User activities logged for debugging purposes | | Pending | |
-| TC-136 | FR-097 | Error logging and reporting | Browser opened | Actions that cause errors | 1. Trigger various errors<br>2. Check browser console<br>3. Verify error logging | Errors logged with details for debugging and reporting | | Pending | |
+| TC-132| FR-096 | User activity logging | User logged in | Various user actions | 1. Perform login<br>2. Schedule pickup<br>3. Check browser console logs | Activities logged in console for debugging | activites are being logged into the console part of the devtools | Pass | |
+| TC-133 | FR-097 | Error logging functionality | Browser opened | Action causing error | 1. Trigger an error (invalid input)<br>2. Check browser console<br>3. Verify error details | Errors logged with details: timestamp, type, message | activities logged with timestamp ,size,name and message | Pass | |
 
 ---
 
@@ -351,21 +343,21 @@
 
 ### Summary Statistics
 
-| Category | Total Test Cases |
-|----------|-----------------|
-| Authentication | 12 |
-| Waste Management | 15 |
-| Dashboard & Analytics | 15 |
-| Content Management | 17 |
-| Community Features | 10 |
-| Admin Functions | 16 |
-| Notifications | 7 |
-| User Interface | 11 |
-| Data Management | 7 |
-| Performance | 6 |
-| Error Handling | 6 |
-| Business Rules | 10 |
-| Support & Maintenance | 5 |
-| **TOTAL** | **137** |
+| Section | Pass | Fail | Blocked | Partial | Total |
+|---------|------|------|---------|---------|-------|
+| Authentication & User Management | 4 | 6 | 2 | 0 | 12 |
+| Waste Management | 2 | 6 | 7 | 0 | 15 |
+| Dashboard & Analytics | 1 | 9 | 5 | 0 | 15 |
+| Content Management | 6 | 3 | 7 | 1 | 17 |
+| Community Features | 7 | 1 | 2 | 0 | 10 |
+| Administrative Functions | 0 | 1 | 15 | 0 | 16 |
+| Notification System | 1 | 0 | 6 | 0 | 7 |
+| User Interface Requirements | 1 | 5 | 2 | 0 | 8 |
+| Data Management Requirements | 5 | 3 | 0 | 1 | 9 |
+| Performance Requirements | 8 | 0 | 0 | 0 | 8 |
+| Error Handling Requirements | 3 | 1 | 0 | 1 | 5 |
+| Business Rules Validation | 0 | 4 | 0 | 0 | 4 |
+| Support and Maintenance | 0 | 0 | 3 | 0 | 3 |
+| **TOTAL** | **38** | **39** | **49** | **3** | **129** |
 
 ---
