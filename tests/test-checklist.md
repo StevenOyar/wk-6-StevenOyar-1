@@ -18,8 +18,8 @@
 
 ### Registration & Login
 - [x] Valid user registration with all required fields
-- [x] Email validation (format and uniqueness)
-- [x] Password validation (minimum 8 characters, match confirmation)
+- [x] Email validation
+- [x] Password validation (minimum 8)
 - [x] Full name validation (2-50 characters)
 - [x] Phone number format validation (optional field)
 - [x] Error messages display correctly for invalid inputs
@@ -32,7 +32,7 @@
 
 ### Role-Based Access
 - [x] User role has appropriate permissions
-- [x] Admin role has full administrative access
+- [ ] Admin role has full administrative access
 - [ ] Restricted pages block unauthorized users
 - [x] Role-based navigation menu displays correctly
 
@@ -44,7 +44,7 @@
 - [x] Schedule form displays with all required fields
 - [x] Future date validation (minimum 24 hours advance)
 - [x] Waste type selection works (General, Recyclable, Organic, Hazardous)
-- [x] Quantity selection works (Small, Medium, Large)
+- [ ] Quantity selection works (Small, Medium, Large)
 - [x] Special instructions field accepts up to 200 characters
 - [x] Address auto-fills from user profile
 - [ ] Available time slots display correctly
@@ -179,10 +179,10 @@
 ### Performance & Compatibility
 - [x] Pages load within 3 seconds
 - [x] User interactions respond within 1 second
-- [x] Works on Chrome (latest 2 versions)
-- [x] Works on Firefox (latest 2 versions)
-- [x] Works on Safari (latest 2 versions)
-- [x] Works on Edge (latest 2 versions)
+- [x] Works on Chrome 
+- [x] Works on Firefox 
+- [x] Works on Safari
+- [x] Works on Edge 
 
 ---
 
