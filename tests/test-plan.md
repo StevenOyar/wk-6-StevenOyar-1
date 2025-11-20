@@ -83,13 +83,13 @@ This test plan outlines a comprehensive quality assurance testing approach for t
 | **Dashboard** | User Statistics, Charts, Request History |  High | MEDIUM |
 | **Admin Panel** | User Management, Request Approval, Moderation |  Critical | HIGH |
 | **Feedback System** | Report Missed Pickup, Feedback Submission |  High | MEDIUM |
-| **Community** | Posts, Interactions, Feed | Medium |
-| **Blog System** | Posts, Comments, Content Management | High |
-| **Feedback System** | Report Missed Pickup, Feedback Submission | High |
-| **Awareness Content** | Educational Content, Tips, Quizzes | Medium |
-| **Non-Functional** | Performance, Accessibility, Usability, Security | High |
+| **Community** | Posts, Interactions, Feed | Medium |Medium|
+| **Blog System** | Posts, Comments, Content Management | High |Medium|
+| **Feedback System** | Report Missed Pickup, Feedback Submission | High |High|
+| **Awareness Content** | Educational Content, Tips, Quizzes | Medium |Medium|
+| **Non-Functional** | Performance, Accessibility, Usability, Security | High |High|
 
-**Total In-Scope Test Cases: not done yet**   
+**Total In-Scope Test Cases: 129**   
 
 ### Out-of-Scope
 
@@ -373,6 +373,14 @@ Each bug report MUST include:
 | **Review Date** | 5/11/2025|
 | **Comments** | Proceed to Phase 2 |
 ---
+
+---
+| **Name** | **Role** | **Initial** | **Date** | **Status** |
+|----------|----------|---------------|---------|-----------|
+| Lilian Kavengi | Test Manager |  | Nov 5, 2025 | Done |
+| Steven Oyaro | Risk Analyst |  | Nov 5, 2025 |  Done|
+| Rose Kemunto | Test Executor |  | Nov 5, 2025 | Done  |
+
 ### Phase 2: 
 
 ### Instructor Acknowledgment
@@ -382,10 +390,25 @@ Each bug report MUST include:
 | **Percentage % earned** | 5%|
 | **Review Date** |11/11/2025 |
 | **Comments** | good work we work on the report and finish execution |
-
 ---
 | **Name** | **Role** | **Initial** | **Date** | **Status** |
 |----------|----------|---------------|---------|-----------|
-| Lilian Kavengi | Test Manager |  | Nov 5, 2025 | Done |
-| Steven Oyaro | Risk Analyst |  | Nov 5, 2025 |  |
-| Rose Kemunto | Test Executor |  | Nov 5, 2025 |  |
+| Lilian Kavengi | Test Manager |  | Nov 11, 2025 | Done |
+| Steven Oyaro | Risk Analyst |  | Nov 11, 2025 |  Done|
+| Rose Kemunto | Test Executor |  | Nov 11, 2025 | Done  |
+
+### Phase 3: 
+
+### Instructor Acknowledgment
+| **Field** | **Details** |
+|-----------|------------|
+| **Instructor Name** | Gerald |
+| **Percentage % earned** | 14%|
+| **Review Date** |20/11/2025 |
+| **Comments** | Final |
+---
+| **Name** | **Role** | **Initial** | **Date** | **Status** |
+|----------|----------|---------------|---------|-----------|
+| Lilian Kavengi | Test Manager |  | Nov 20, 2025 | Done |
+| Steven Oyaro | Risk Analyst |  | Nov 20, 2025 |  Done|
+| Rose Kemunto | Test Executor |  | Nov 20, 2025 | Done  |
